@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300..700&family=Sora:wght@100..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.ulas{
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #eeeeee;
+}
+.mail_gonder{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+   
+}
+.mail_gonder input[type="text"],
+.mail_gonder input[type="email"] {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    border: 2px solid #1F2E8F;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #eeeeee;
+}
+.full_name{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px auto;
+    justify-content: space-between;
+}
+.first_name{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    width: 50%;
+}
+.last_name{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.mesaj{
+    height: 40px;
+    padding: 10px;
+}
+.mail{
+    padding: 10px;
+}
+label{
+    font-family: "Urbanist", serif;
+}
+button{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    background-color: #1F2E8F;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.iletisim_box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    font-family: "Roboto", sans-serif;
+}
+
+
+.blurred-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(to right, #1F2E8Fb3,#1F2E8Fb3 );  /* Gradyan: sol daha koyu, sağ daha açık */
+    filter: blur(10px);  /* Bulanıklık efekti */
+    z-index: 1;  /* Overlay'i görselin önüne yerleştiriyoruz */
+    transition: filter 0.3s ease-out;  /* Hover geçişi için animasyon */
+}
+
+.vakalar_container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .vakalar_container > img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    position: relative;
+  
+  }
+.ulas{
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.ulas h1{
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.icon{
+  font-size: 1.2em;
+  margin-right: 5px;
+  color: #1F2E8F;
+}
+.adres_container{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  text-align: left;
+  justify-content: center;
+}
+.adres_container p{
+  
+  margin: 3px;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  /* Vakalar container'ını mobil görünümde gizle */
+  .vakalar_container {
+    display: none;
+  }
+
+  .ulas {
+    /* Vakalar container gizlendiği için üstteki boşluğu azalt */
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+
+  .mail_gonder {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .full_name {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .first_name,
+  .last_name {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .mail_gonder input[type="text"],
+  .mail_gonder input[type="email"],
+  .mesaj {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 5px 0 10px 0;
+  }
+
+  .mesaj {
+    height: 100px;
+    resize: vertical;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    margin-top: 15px;
+    box-sizing: border-box;
+  }
+
+  /* Harita container'ı için düzenlemeler */
+  div[style*="width: 400px"] {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  /* Üst kısımdaki resim ve overlay için düzenlemeler */
+  .vakalar_container {
+    height: 120px;
+  }
+
+  .vakalar_container > img {
+    height: 120px;
+  }
+
+  .blurred-overlay {
+    height: 120px;
+  }
+}
+
+/* Daha küçük ekranlar için ek düzenlemeler */
+@media screen and (max-width: 480px) {
+  /* Vakalar container küçük ekranlarda da gizli kalacak */
+  .vakalar_container {
+    display: none;
+  }
+
+  .mail_gonder {
+    width: 95%;
+    padding: 0 5px;
+  }
+
+  .mail_gonder input[type="text"],
+  .mail_gonder input[type="email"],
+  .mesaj {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  div[style*="width: 400px"] {
+    width: 95% !important;
+    height: 300px !important;
+  }
+
+  button {
+    font-size: 1em;
+    letter-spacing: 2px;
+  }
+
+  .vakalar_container {
+    height: 100px;
+  }
+
+  .vakalar_container > img {
+    height: 100px;
+  }
+
+  .blurred-overlay {
+    height: 100px;
+  }
+}

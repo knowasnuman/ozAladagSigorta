@@ -1,0 +1,22 @@
+{
+  "short_name": "Öz Aladağ Sigorta",
+  "name": "Öz Aladağ Sigorta",
+  "description": "Guvenilir ve Uygun Fiyatlı Sigorta Teklifi Almak İçin Hemen Tıklayın",
+  "icons": [
+    {
+      "src": "ustlogo.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "ustlogo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "ustlogo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

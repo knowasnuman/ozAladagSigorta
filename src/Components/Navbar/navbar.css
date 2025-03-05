@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&family=Signika+Negative:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300..700&family=Sora:wght@100..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+.navbar_Container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 150px;
+  position: absolute;
+  transform: translateY(-100%); /* Varsayılan olarak gizli */
+  opacity: 0;
+}
+.navbarS {
+  transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 150px;
+  position: absolute;
+  
+}
+.navbar.visibleH {
+  transform: translateY(0%); /* Yukarı kaybolur */
+  opacity: 1;
+  background-color: #1F2E8F;
+}
+.navbar.hiddenH {
+  background-color: #1F2E8F;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-100%); /* Yukarı kaybolur */
+  transition: 0.3s ease-out;
+}
+.nav_kalan.visibleH {
+  transform: translateY(0%); /* Yukarı kaybolur */
+  opacity: 1;
+}
+.nav_kalan.hiddenH {
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-100%); /* Yukarı kaybolur */
+  transition: 0.3s ease-out;
+}
+.navbar_Logo {
+  width: 30%;
+}
+.navbar_Logo > img {
+  width: 100%;
+}
+.nav_links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+.myLink {
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Sora", sans-serif;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.myLink:hover {
+  background-color: #1F2E8F;
+}
+.myLinkV:hover {
+  background-color: #fff;
+  color: #1F2E8F;
+}
+.nav_kalan {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  
+  height: 150px;
+}
+.myLinkV {
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Sora", sans-serif;
+  color: #fff;
+  background-color: #1F2E8F;
+  padding: 15px 30px;
+  border-radius: none;
+}
+.myLinka {
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Sora", sans-serif;
+  color: #fff;
+  
+  padding: 15px 30px;
+  border-radius: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.myLinka:hover {
+  background-color: #1F2E8F;
+}
+.compNumber{
+  padding-left: 130px;
+  color: #fff; 
+  font-weight: 600;
+  font-family: "Sora", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.markaIsmiMobil{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  
+  
+}
+.markaIsmiMobil > h1{
+  color: #1F2E8F;
+  
+  
+}
+.mobil_ikon{
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+.mobiliz{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: sticky;
+  background-color: #fff;
+}
+
+.hamburger {
+  display: flex;
+  font-size: 1rem;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links-mobile {
+  position: sticky;
+  font-size: 0.8em;
+  width: 100%;
+  margin: auto;
+  list-style: none;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #1F2E8F;
+}
+
+.myLinkV_Mobile{
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Sora", sans-serif;
+  color: #fff;
+  background-color: #1F2E8F;
+  padding: 5px ;
+  border-radius: none;
+}
+
+.nav-links-mobile a:hover {
+  color: #1F2E8F;
+  background-color: #fff;
+}
+
+

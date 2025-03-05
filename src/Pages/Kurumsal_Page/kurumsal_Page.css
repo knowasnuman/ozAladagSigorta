@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Gowun+Dodum&display=swap');
+
+
+
+.kurumsalAna{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.vakalar_container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .vakalar_container > img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    position: relative;
+  
+  }
+  
+  /* Gradyan ve blur efekti için overlay ekliyoruz */
+  .blurred-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(to right, #1F2E8Fb3,#1F2E8Fb3 );  /* Gradyan: sol daha koyu, sağ daha açık */
+    filter: blur(10px);  /* Bulanıklık efekti */
+    z-index: 1;  /* Overlay'i görselin önüne yerleştiriyoruz */
+    transition: filter 0.3s ease-out;  /* Hover geçişi için animasyon */
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #EEEEEE;
+   
+    margin: 40px 0;
+    padding: 40px 0;
+    font-family: "Gowun Dodum", serif;
+    font-style: normal;
+    box-shadow: 0 0 10px 4px rgb(214, 214, 214);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Animasyon ekliyoruz */
+    transform: perspective(1000px) translateZ(0); /* Varsayılan perspektif */
+}
+section:hover {
+    transform: perspective(1000px) translateZ(20px) scale(1.05); /* Yakınlaşma ve havaya kalkma */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Daha derin bir gölge */
+  }
+.icBolum{
+    width: 70%;
+    margin:0 auto;
+}
+.inBolum h1{
+    font-size: 2em;
+    color: #000000b3;
+}
+.inBolum p{
+    font-size: 1.3em;
+}
+.quote{
+    font-size: 1.4em;
+}
+
+@media screen and (max-width: 768px) {
+  /* Vakalar container'ı mobil görünümde gizlensin */
+  .vakalar_container {
+    display: none;
+  }
+
+  .kurumsalAna {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  section {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px 0;
+    box-shadow: 0 0 5px 2px rgb(214, 214, 214);
+  }
+
+  /* Hover efektini mobilde kaldır */
+  section:hover {
+    transform: none;
+    box-shadow: 0 0 5px 2px rgb(214, 214, 214);
+  }
+
+  .icBolum {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .inBolum h1 {
+    font-size: 1.3em;
+    margin-bottom: 12px;
+  }
+
+  .inBolum p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .quote {
+    font-size: 1em;
+  }
+
+  /* Misyon, Vizyon ve İlke bölümleri için özel stiller */
+  .misyonumuz,
+  .vizyonumuz,
+  .ilkemiz {
+    margin: 5px 0;
+  }
+
+  .misyonumuz h1,
+  .vizyonumuz h1,
+  .ilkemiz h1 {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+  }
+
+  .misyonumuz p,
+  .vizyonumuz p,
+  .ilkemiz p {
+    font-size: 0.9em;
+    padding: 0 8px;
+    text-align: justify;
+    line-height: 1.5;
+  }
+}
+
+/* Daha küçük ekranlar için ek düzenlemeler */
+@media screen and (max-width: 480px) {
+  .icBolum {
+    width: 90%;
+    padding: 5px;
+  }
+
+  .inBolum h1 {
+    font-size: 1.1em;
+  }
+
+  .inBolum p {
+    font-size: 0.85em;
+    line-height: 1.4;
+  }
+
+  .quote {
+    font-size: 0.9em;
+  }
+
+  .misyonumuz h1,
+  .vizyonumuz h1,
+  .ilkemiz h1 {
+    font-size: 1.2em;
+  }
+
+  .misyonumuz p,
+  .vizyonumuz p,
+  .ilkemiz p {
+    font-size: 0.85em;
+    padding: 0 5px;
+    line-height: 1.4;
+  }
+
+  section {
+    width: 90%;
+    padding: 15px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

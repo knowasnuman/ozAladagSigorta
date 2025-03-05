@@ -1,0 +1,169 @@
+.kampanyaPageContainer {
+    
+  
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  
+
+}
+.vakalar_container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .vakalar_container > img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    position: relative;
+  
+  }
+  
+  /* Gradyan ve blur efekti için overlay ekliyoruz */
+  .blurred-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(to right, #1F2E8Fb3,#1F2E8Fb3 );  /* Gradyan: sol daha koyu, sağ daha açık */
+    filter: blur(10px);  /* Bulanıklık efekti */
+    z-index: 1;  /* Overlay'i görselin önüne yerleştiriyoruz */
+    transition: filter 0.3s ease-out;  /* Hover geçişi için animasyon */
+}
+.kampanyaDetay {
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.kampanyaImage {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.kampanyaImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.kampanyaIcerik {
+  padding: 30px;
+}
+
+.kampanyaIcerik h1 {
+  
+  font-family: "Sora", sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.dd{
+  margin: 30px;
+  font-family: "Sora", sans-serif;
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  
+  text-align: left;
+}
+.kampanyaBilgi {
+  margin-top: 30px;
+}
+
+.kampanyaBilgi h2 {
+  color: #FF6B00;
+  font-family: "Sora", sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.kampanyaBilgi p {
+  color: #292929;
+  font-family: "Sora", sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.kampanyaBilgi ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.kampanyaBilgi ul li {
+  color: #292929;
+  font-family: "Sora", sans-serif;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+.bc{
+  color: #292929;
+  font-family: "Sora", sans-serif;
+  font-size: 1em;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+.kampanyaBilgi ul li:before {
+  content: "•";
+  color: #1F2E8F;
+  position: absolute;
+  left: 0;
+}
+.renkliBaslikContainer{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Sora", sans-serif;
+  font-size: 1.7em;
+  color: #fff;
+  font-weight: 900;
+  background: linear-gradient(to right, #FF6B00, #8f1f1f); /* Turuncu tonundan mavi tona geçiş */
+  padding: 20px 0; /* Biraz padding ekleyelim */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Yazıların daha iyi okunması için gölge */
+}
+
+/* Mobil görünüm için medya sorgusu */
+@media screen and (max-width: 768px) {
+  .kampanyaDetay {
+    width: 90%;
+  }
+
+  .kampanyaImage {
+    height: 250px;
+  }
+
+  .kampanyaIcerik {
+    padding: 20px;
+  }
+
+  .kampanyaIcerik h1 {
+    font-size: 2em;
+  }
+
+  .kampanyaBilgi h2 {
+    font-size: 1.5em;
+  }
+
+  .kampanyaBilgi p {
+    font-size: 1.1em;
+  }
+
+  .kampanyaBilgi ul li {
+    font-size: 1em;
+  }
+}
