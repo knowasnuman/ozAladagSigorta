@@ -25,11 +25,11 @@ const Trafiksigortasi = () => {
 
     emailjs
       .send(
-        "service_0k6lqim",
-        "template_01fl1bf",
+        process.env.DASK_EMAILJS_SERVICE_ID,
+        process.env.KASKO_EMAILJS_TEMPLATE_ID,
         formObject,
         {
-          publicKey: "SbqqmTEYmhshxwn2I",
+          publicKey: process.env.DASK_EMAILJS_PUBLIC_KEY,
         }
       )
       .then(

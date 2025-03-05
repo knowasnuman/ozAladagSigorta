@@ -22,11 +22,12 @@ const DaskSigortasi = () => {
 
     emailjs
       .send(
-        "service_0k6lqim",
-        "template_65lnclm",
+
+        process.env.DASK_EMAILJS_SERVICE_ID,
+        process.env.DASK_EMAILJS_TEMPLATE_ID,
         formObject,
         {
-          publicKey: "SbqqmTEYmhshxwn2I",
+          publicKey: process.env.DASK_EMAILJS_PUBLIC_KEY,
         }
       )
       .then(

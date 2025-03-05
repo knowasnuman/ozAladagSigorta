@@ -21,8 +21,8 @@ const SeyahatSigortasi = () => {
     const formObject = Object.fromEntries(formData.entries());
 
     emailjs
-      .send("service_0k6lqim", "template_65lnclm", formObject, {
-        publicKey: "SbqqmTEYmhshxwn2I",
+      .send(process.env.DASK_EMAILJS_SERVICE_ID, process.env.DASK_EMAILJS_TEMPLATE_ID, formObject, {
+        publicKey: process.env.DASK_EMAILJS_PUBLIC_KEY,
       })
       .then(
         () => {
